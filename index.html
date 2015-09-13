@@ -1,43 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Grunt-gr by AlphaBet555</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Grunt-gr : For your code is flunt">
 
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Grunt-gr</title>
   </head>
+
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/AlphaBet555/grunt-GR">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/AlphaBet555/grunt-GR/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/AlphaBet555/grunt-GR/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
 
-    <div class="wrapper">
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/AlphaBet555/grunt-GR">View on GitHub</a>
 
-      <section>
-        <div id="title">
-          <h1>Grunt-gr</h1>
-          <p>For your code is flunt</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/AlphaBet555">AlphaBet555</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
+          <h1 id="project_title">Grunt-gr</h1>
+          <h2 id="project_tagline">For your code is flunt</h2>
 
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/AlphaBet555/grunt-GR/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/AlphaBet555/grunt-GR/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
         <h1>
 <a id="buddle" class="anchor" href="#buddle" aria-hidden="true"><span class="octicon octicon-link"></span></a>buddle</h1>
 
@@ -81,18 +74,18 @@
 <a id="options" class="anchor" href="#options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Options</h3>
 
 <h4>
-<a id="optionsseparator" class="anchor" href="#optionsseparator" aria-hidden="true"><span class="octicon octicon-link"></span></a>options.separator</h4>
+<a id="optionswho" class="anchor" href="#optionswho" aria-hidden="true"><span class="octicon octicon-link"></span></a>options.who</h4>
 
 <p>Type: <code>String</code>
-Default value: <code>',  '</code></p>
+Default value: <code>buddle</code></p>
 
 <p>A string value that is used to do something with whatever.</p>
 
 <h4>
-<a id="optionspunctuation" class="anchor" href="#optionspunctuation" aria-hidden="true"><span class="octicon octicon-link"></span></a>options.punctuation</h4>
+<a id="optionscommentsymbol" class="anchor" href="#optionscommentsymbol" aria-hidden="true"><span class="octicon octicon-link"></span></a>options.commentSymbol</h4>
 
 <p>Type: <code>String</code>
-Default value: <code>'.'</code></p>
+Default value: <code>\\</code></p>
 
 <p>A string value that is used to do something else with whatever else.</p>
 
@@ -121,33 +114,33 @@ Default value: <code>'.'</code></p>
 <div class="highlight highlight-js"><pre>grunt.initConfig({
   buddle<span class="pl-k">:</span> {
     options<span class="pl-k">:</span> {
-      separator<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>: <span class="pl-pds">'</span></span>,
-      punctuation<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span> !!!<span class="pl-pds">'</span></span>,
+      who<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>buddle<span class="pl-pds">'</span></span>,
+      commentSymbol<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span><span class="pl-cce">\\</span><span class="pl-pds">'</span></span>
     },
-    files<span class="pl-k">:</span> {
-      <span class="pl-s"><span class="pl-pds">'</span>dest/default_options<span class="pl-pds">'</span></span><span class="pl-k">:</span> [<span class="pl-s"><span class="pl-pds">'</span>src/testing<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>src/123<span class="pl-pds">'</span></span>],
-    },
+    dist<span class="pl-k">:</span> [<span class="pl-s"><span class="pl-pds">'</span>example/*.js<span class="pl-pds">'</span></span>]
   },
-})</pre></div>
+})
 
-<h2>
-<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h2>
+## Contributing
+In lieu <span class="pl-k">of</span> a formal styleguide, take care to maintain the existing coding style. Add unit tests <span class="pl-k">for</span> any <span class="pl-k">new</span> <span class="pl-en">or</span> changed functionality. Lint and test your code using [Grunt](http<span class="pl-k">:</span><span class="pl-c">//gruntjs.com/).</span>
 
-<p>In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using <a href="http://gruntjs.com/">Grunt</a>.</p>
+## Release <span class="pl-c1">History</span>
+<span class="pl-c1">2015</span><span class="pl-k">/</span><span class="pl-c1">9</span><span class="pl-k">/</span><span class="pl-c1">13</span> <span class="pl-c1">1.0</span>.<span class="pl-c1">0</span> <span class="pl-k">&gt;&gt;&gt;</span>
 
-<h2>
-<a id="release-history" class="anchor" href="#release-history" aria-hidden="true"><span class="octicon octicon-link"></span></a>Release History</h2>
-
-<p><em>(Nothing yet)</em></p>
-
-<h2>
-<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
-
-<p>Copyright (c) 2015 AlphaBet. Licensed under the MIT license.</p>
+## License
+Copyright (c) <span class="pl-c1">2015</span> AlphaBet. Licensed under the <span class="pl-c1">MIT</span> license.</pre></div>
       </section>
-
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Grunt-gr maintained by <a href="https://github.com/AlphaBet555">AlphaBet555</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
     
+
   </body>
 </html>
